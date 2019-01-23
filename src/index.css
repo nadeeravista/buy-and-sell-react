@@ -1,0 +1,164 @@
+@import url("https://fonts.googleapis.com/css?family=Noto+Sans");
+@import url("https://fonts.googleapis.com/css?family=Montserrat");
+body, html {
+  height: 100%;
+}
+
+body {
+  margin: 0px;
+  font-family: "Noto Sans",sans-serif;
+  color: #1e234b;
+}
+
+body #bg {
+  -webkit-clip-path: polygon(0 0, 78% 0, 28% 100%, 0% 100%);
+          clip-path: polygon(0 0, 78% 0, 28% 100%, 0% 100%);
+  background-color: rgba(230, 230, 230, 0.973);
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  z-index: -100;
+}
+
+.header {
+  background-color: #FFFFFF;
+  -webkit-box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  padding: 15px;
+  width: 97.8%;
+}
+
+.header a:link {
+  color: #1e234b;
+  text-decoration: none;
+}
+
+.header h2 {
+  margin: 10px;
+  font-weight: 800;
+}
+
+.row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.col-1 {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.col-6 {
+  -webkit-box-flex: 6;
+      -ms-flex: 6;
+          flex: 6;
+}
+
+.col-3 {
+  -webkit-box-flex: 1.6;
+      -ms-flex: 1.6;
+          flex: 1.6;
+}
+
+.move-right {
+  text-align: right;
+}
+
+.move-left {
+  text-align: left;
+}
+
+.button-default {
+  color: #1e234b;
+  border-color: #1e234b;
+  background-image: none;
+  background-color: transparent;
+  border-width: 2px;
+}
+
+.button-success {
+  color: white;
+  background-color: #be3512;
+  border-width: 2px;
+  border-color: #be3512;
+}
+
+.btn {
+  border-radius: 60px;
+  padding: 10px 20px;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.inpt {
+  border-radius: 60px;
+  padding: 10px 20px;
+  font-weight: 600;
+  font-size: 14px;
+  border-width: 2px;
+  border-color: #be3512;
+}
+
+button {
+  margin: 10px 5px;
+}
+
+input {
+  margin: 10px 5px;
+}
+
+.form-elm-3 {
+  min-width: 400px;
+}
+
+.form-elm-2 {
+  min-width: 200px;
+}
+
+.widget-small {
+  min-width: 10%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  background-color: #FFFFFF;
+  margin: 10px;
+  padding: 20px;
+  font-family: "Montserrat",sans-serif;
+  -webkit-box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.widget-icon {
+  font-size: 4rem;
+  margin: 0px 10px 0px 15%;
+  text-align: right;
+}
+
+.widget-description {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  font-size: 1rem;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  font-weight: 500;
+  line-height: 1.5;
+  padding-right: 10px;
+}
+
+.widget-subtitle {
+  color: #8287ad;
+  font-size: 13px;
+}
+/*# sourceMappingURL=main.css.map */
