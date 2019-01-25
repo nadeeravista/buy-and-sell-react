@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans');
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+
+$colors : (
+    primary: rgba(230, 230, 230, 0.973),
+    header: #FFFFFF,
+    font-primary: #1e234b,
+    widget-background: #FFFFFF,
+    font-primary-1: #8287ad,
+    success:   #009c3c,
+    button-primary:  #be3512
+);
+$padding: 15px;
+$boarders: 15px;
+
+
+@function color($color-name){
+    @return map-get($colors , $color-name );
+}
+
+body, html {
+    height: 100%;
+}
+
+body {
+    
+    margin: 0px;
+    font-family: "Noto Sans",sans-serif;
+    color: color(font-primary);
+
+    #bg {
+        clip-path: polygon(0 0, 78% 0, 28% 100%, 0% 100%);
+        background-color: color(primary);
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        z-index: -100;
+    }
+}
+
+.header {
+    background-color:color(header);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+    padding: $padding;
+    width: 97.8%;
+
+    a:link{
+        color: color(font-primary);
+        text-decoration: none;
+    }
+
+    h2{
+        margin: 10px;
+        font-weight: 800;
+    }
+}
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.col-1 {
+    flex: 1;
+}
+
+.col-6{
+    flex:6;
+}
+
+.col-3 {
+    flex: 1.6;
+}
+
+.move-right{
+    text-align: right;
+}
+.move-left{
+    text-align: left;
+}
+
+.button-default {
+    color: white;
+    background-color: color(button-primary);
+    border-width: 2px;
+    border-color: color(button-primary);
+}
+
+
+.button-success {
+    color: white;
+    background-color: color(success);
+    border-width: 2px;
+    border-color: color(success);
+}
+
+.btn{
+    border-radius: 60px;
+    padding: 10px 20px;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.inpt{
+    border-radius: 60px;
+    padding: 10px 20px;
+    font-weight: 600;
+    font-size: 14px;
+    border-width: 2px;
+    border-color: color(button-primary);;
+}
+
+button{
+    margin: 10px 5px;
+}
+
+input{
+    margin: 10px 5px;
+}
+.form-elm-3 {
+    min-width: 400px;
+}
+.form-elm-2 {
+    min-width: 200px;
+}
+.widget-small{
+    min-width: 10%;
+    display: flex;
+    flex-grow: 1;
+    background-color: color(widget-background);
+    margin: 10px;
+    padding: 20px;
+    font-family: "Montserrat",sans-serif;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+
+}
+
+.widget-icon{
+    font-size: 4rem;
+    margin: 0px 10px 0px 15%;
+    text-align: right;
+   
+}
+
+.widget-description{
+    flex: 1;
+    font-size: 1rem;
+    align-self: center;
+    font-weight: 500;
+    line-height: 1.5;
+    padding-right: 10px;
+}
+
+.widget-subtitle{
+    color: color(font-primary-1);
+    font-size: 13px;
+}
+
+.icon-button-default{
+    vertical-align: middle;
+    margin-left: 10px;
+    font-size: 25px;
+}
+
+
+
+
+
