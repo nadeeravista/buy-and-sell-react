@@ -166,4 +166,36 @@ input {
   margin-left: 10px;
   font-size: 25px;
 }
+
+.admin-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+}
+
+.admin-body-container {
+  margin: 10px 0px 0px 10px;
+}
+
+.sidebar-menu {
+  background-color: #1E224B;
+  min-width: 10%;
+}
+
+.sidebar-menu ul {
+  list-style: none;
+  padding: 5px 20px 0px 20px;
+  margin-top: 0px;
+}
+
+.sidebar-menu ul li {
+  margin-top: 10px;
+}
+
+.sidebar-menu ul li a {
+  color: white;
+  font-size: 15px;
+  text-decoration: none;
+}
 /*# sourceMappingURL=main.css.map */

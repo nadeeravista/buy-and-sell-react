@@ -1,7 +1,5 @@
 import React, { Component } from 'react';
-import Header from './Header';
-import CategoryContainer from './CategoryContainer';
-
+import Routes from './routes/Routes';
 
 class App extends Component {
 
@@ -9,12 +7,11 @@ class App extends Component {
     series: [1]
   }
   render() {
+    
     return (
-        
-    <div className="App">
-        <Header appName="IkmanSearch"/>
-          <CategoryContainer></CategoryContainer>
-        </div>
+      <div className="App">
+        <Routes/>
+      </div>
     );
   }
 }

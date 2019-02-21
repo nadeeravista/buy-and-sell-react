@@ -12,6 +12,7 @@ $colors : (
 );
 $padding: 15px;
 $boarders: 15px;
+$menu-font-size: 15px;
 
 
 @function color($color-name){
@@ -161,6 +162,33 @@ input{
     vertical-align: middle;
     margin-left: 10px;
     font-size: 25px;
+}
+
+.admin-container{
+  display: flex;
+  height: 100%;
+}
+.admin-body-container{
+  margin: 10px 0px 0px 10px;
+}
+
+.sidebar-menu{
+  background-color:#1E224B;
+  min-width: 10%;
+  
+  ul {
+    list-style: none;
+    padding: 5px 20px 0px 20px;
+    margin-top: 0px;
+    li {
+      margin-top: 10px;
+      a {
+        color: white;
+        font-size: $menu-font-size;
+        text-decoration: none;
+      }
+    }
+  }
 }
 
 
