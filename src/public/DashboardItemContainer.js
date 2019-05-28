@@ -14,7 +14,7 @@ class DashboardItemContainer extends Component {
 
   render() {
 
-    const { error, isLoaded, items } = this.state;
+    const { isLoaded, items } = this.state;
 
     if (!isLoaded) {
         return <div>Loading...</div>;

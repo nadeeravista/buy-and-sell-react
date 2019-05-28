@@ -1,7 +1,5 @@
 import React, { Component } from 'react';
-import RouteFactory from './RouteFactory';
-
-import { BrowserRouter, Route, Switch} from 'react-router-dom'
+import Routes from './routes/Routes';
 
 class App extends Component {
 
@@ -12,12 +10,7 @@ class App extends Component {
     
     return (
       <div className="App">
-      <BrowserRouter>
-      <div>
-      <RouteFactory/>
-          </div>
-      </BrowserRouter>
-      
+        <Routes/>
       </div>
     );
   }

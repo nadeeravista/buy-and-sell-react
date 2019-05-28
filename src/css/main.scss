@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Noto+Sans');
 @import url('https://fonts.googleapis.com/css?family=Montserrat');
 
+
 $colors : (
     primary: rgba(230, 230, 230, 0.973),
     header: #FFFFFF,
@@ -13,6 +14,9 @@ $colors : (
 $padding: 15px;
 $boarders: 15px;
 $menu-font-size: 15px;
+$max-width: 790px;
+$mid-width: 1250px;
+$small-width: 960px;
 
 
 @function color($color-name){
@@ -53,6 +57,12 @@ body {
     h2{
         margin: 10px;
         font-weight: 800;
+    }
+    .logo-title {
+        @media only screen and (max-width: $max-width) {
+            display:none;
+        }
+        
     }
 }
 
@@ -101,6 +111,9 @@ body {
     padding: 10px 20px;
     font-weight: 600;
     font-size: 14px;
+    i{
+        display: none;
+    }
 }
 
 .inpt{
@@ -190,6 +203,134 @@ input{
     }
   }
 }
+
+.link{
+    color: white;
+}
+
+
+.widget-post{
+    max-width: 28%;
+    display: flex;
+    flex-grow: 1;
+    background-color: color(widget-background);
+    margin: 10px;
+    padding: 20px;
+    font-family: "Montserrat",sans-serif;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+
+    .widget-image{
+        width: 12rem;
+        height: 10rem;
+        float: left;
+        background-color: #f1fdf586;
+    }
+    .widget-post-details{
+        float: left;
+        min-width: 15rem;
+        margin-left: 10px;
+    }
+    .box-description{
+        width: 95%;
+    }
+}
+
+.public-footer {
+    display: none;
+}
+@media only screen and (max-width: $mid-width) {
+    .widget-post{
+        max-width: 42%;
+    }
+}
+
+@media only screen and (max-width: $small-width) {
+    .widget-post{
+        min-width: 88%;
+    }
+}
+    
+
+@media only screen and (max-width: $max-width) {
+    .header{
+        .btn {
+            .text {
+                display: none;
+            }
+            i{
+               display: inline;
+            }
+        }
+        .header-login{
+            display: none;
+        }
+    }
+
+    /* Place the navbar at the bottom of the page, and make it stick */
+
+    .public-footer {
+        display: inline;
+        .navbar {
+            background-color: color(button-primary);
+            overflow: hidden;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            display: flex;
+            
+          }
+          
+          /* Style the links inside the navigation bar */
+          .navbar i {
+            flex: 1;
+            display: block;
+            color: #f2f2f2;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 22px;
+            margin: auto;
+          }
+          
+          /* Change the color of links on hover */
+          .navbar a:hover {
+            background-color: #ddd;
+            color: black;
+          }
+          
+          /* Add a color to the active/current link */
+          .navbar a.active {
+            background-color: #4CAF50;
+            color: white;
+          }
+    }
+}
+
+.widget-rating {
+    margin: 5px 0px 5px 5px;
+    .rating-label{
+        margin-right: 10px;
+    }
+}
+
+.star-checked{
+    color:orange;
+}
+
+.widget-title-1{
+    font-size: 1.5em;
+    margin: 5px 0px 5px 5px;
+}
+.widget-title-2 {
+    font-size: 1em;
+    margin: 5px 0px 5px 5px;
+}
+.widget-title-3{
+    font-size: 0.8em;
+    margin: 5px 0px 5px 5px;
+
+}
+
 
 
 

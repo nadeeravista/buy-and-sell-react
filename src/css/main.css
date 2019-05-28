@@ -38,6 +38,12 @@ body #bg {
   font-weight: 800;
 }
 
+@media only screen and (max-width: 790px) {
+  .header .logo-title {
+    display: none;
+  }
+}
+
 .row {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -94,6 +100,10 @@ body #bg {
   padding: 10px 20px;
   font-weight: 600;
   font-size: 14px;
+}
+
+.btn i {
+  display: none;
 }
 
 .inpt {
@@ -197,5 +207,134 @@ input {
   color: white;
   font-size: 15px;
   text-decoration: none;
+}
+
+.link {
+  color: white;
+}
+
+.widget-post {
+  max-width: 28%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  background-color: #FFFFFF;
+  margin: 10px;
+  padding: 20px;
+  font-family: "Montserrat",sans-serif;
+  -webkit-box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.widget-post .widget-image {
+  width: 12rem;
+  height: 10rem;
+  float: left;
+  background-color: #f1fdf586;
+}
+
+.widget-post .widget-post-details {
+  float: left;
+  min-width: 15rem;
+  margin-left: 10px;
+}
+
+.widget-post .box-description {
+  width: 95%;
+}
+
+.public-footer {
+  display: none;
+}
+
+@media only screen and (max-width: 1250px) {
+  .widget-post {
+    max-width: 42%;
+  }
+}
+
+@media only screen and (max-width: 960px) {
+  .widget-post {
+    min-width: 88%;
+  }
+}
+
+@media only screen and (max-width: 790px) {
+  .header .btn .text {
+    display: none;
+  }
+  .header .btn i {
+    display: inline;
+  }
+  .header .header-login {
+    display: none;
+  }
+  /* Place the navbar at the bottom of the page, and make it stick */
+  .public-footer {
+    display: inline;
+    /* Style the links inside the navigation bar */
+    /* Change the color of links on hover */
+    /* Add a color to the active/current link */
+  }
+  .public-footer .navbar {
+    background-color: #be3512;
+    overflow: hidden;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .public-footer .navbar i {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 22px;
+    margin: auto;
+  }
+  .public-footer .navbar a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  .public-footer .navbar a.active {
+    background-color: #4CAF50;
+    color: white;
+  }
+}
+
+.widget-rating {
+  margin: 5px 0px 5px 5px;
+}
+
+.widget-rating .rating-label {
+  margin-right: 10px;
+}
+
+.star-checked {
+  color: orange;
+}
+
+.widget-title-1 {
+  font-size: 1.5em;
+  margin: 5px 0px 5px 5px;
+}
+
+.widget-title-2 {
+  font-size: 1em;
+  margin: 5px 0px 5px 5px;
+}
+
+.widget-title-3 {
+  font-size: 0.8em;
+  margin: 5px 0px 5px 5px;
 }
 /*# sourceMappingURL=main.css.map */
